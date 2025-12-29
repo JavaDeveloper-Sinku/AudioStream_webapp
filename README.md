@@ -1,36 +1,148 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎵 Audio Stream Webpage
 
-## Getting Started
+A modern **Audio Streaming Web Application** that allows users to browse, search, and play music tracks in real time on a single page.
+The project focuses on **clean UI, smooth playback, and user-friendly interactions**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📌 Features
+
+* 🎧 Play music directly in the browser
+* 🔍 Centered glass-effect search bar
+* 🎶 Clickable music list with hover & zoom effects
+* ⏯️ Music player with play / pause controls
+* 🕒 Recent playlist section
+* ✨ Modern glassmorphism UI
+* ⚡ Single Page Application (SPA)
+* 📱 Responsive layout
+
+---
+
+## 🧱 Project Structure
+
+```
+audio-stream/
+│
+├── components/
+│   ├── Navbar.tsx
+│   ├── MusicPlayer.tsx
+│   ├── MusicList.tsx
+│   ├── Sidebar.tsx
+│   ├── RecentPlaylist.tsx
+│   └── SearchBar.tsx
+│
+├── app/
+│   └── page.tsx   // Main dashboard page
+│
+├── public/
+│   └── audio/     // Demo audio files
+│
+├── README.md
+└── package.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
+<img width="1676" height="812" alt="Screenshot 2025-12-29 at 9 10 46 PM" src="https://github.com/user-attachments/assets/524f45a0-b7b1-4746-af43-4852ea5efde0" />
+<img width="1669" height="822" alt="Screenshot 2025-12-29 at 9 10 53 PM" src="https://github.com/user-attachments/assets/d6fbc4b3-766a-4ccf-90f3-b8644f7a311a" />
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack
 
-## Learn More
+### Frontend
 
-To learn more about Next.js, take a look at the following resources:
+* **Next.js (React)**
+* **TypeScript**
+* **Tailwind CSS**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Audio
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* **HTML5 Audio API**
+* Browser-based audio streaming
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 How It Works
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. User selects a song from the music list
+2. The audio source is loaded dynamically
+3. HTML5 Audio API streams the audio
+4. Music starts playing instantly
+5. Recent playlist updates automatically
+
+---
+
+## 🖥️ UI Components Explained
+
+### Search Bar
+
+* Center aligned
+* Glassmorphism effect
+* Hover highlight
+* Click zoom animation
+
+### Music List
+
+* Displays song title, artist, duration
+* Hover effect for each item
+* Click to play
+
+### Music Player
+
+* Shows current track
+* Play / Pause functionality
+* Controlled from state
+
+### Recent Playlist
+
+* Displays recently played tracks
+* Scrollable
+* Click to replay
+
+---
+
+## 📦 Installation & Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/audio-stream-webpage.git
+
+# Go to project folder
+cd audio-stream-webpage
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+```
+
+Open a browser and visit:
+
+```
+http://localhost:3000
+```
+
+
+---
+
+## 🌱 Future Enhancements
+
+* User authentication
+* Backend audio streaming (Spring Boot / Node.js)
+* Cloud storage (AWS S3)
+* Playlist creation
+* Audio progress seek bar
+* Volume control
+* 
+
+---
+
+## 📚 Learning Outcomes
+
+* React component architecture
+* State-based audio control
+* UI/UX design for media apps
+* Browser audio streaming concepts
+* Modular frontend development
+
+---
